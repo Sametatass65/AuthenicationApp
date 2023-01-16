@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/constraintbackground"
+    tools:context=".GuncellemeActivity">
+
+
+    <TextView
+        android:id="@+id/guncelle_activity_bilgilendirme_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="41dp"
+        android:gravity="center"
+        android:text="Üye olarak veya giriş yaparak Kullanım ve Gizlilik Koşullarını kabul etmiş sayılırsınız."
+        android:textColor="@color/textColor"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guncelle_activity_giris_yap_button" />
+
+    <TextView
+        android:id="@+id/guncelle_activity_yeni_uyelik_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="16dp"
+        android:text="Güncelleme Sayfasi"
+        android:textColor="@color/textColor"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/guncelle_activity_ad_soyad_textview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/guncelle_activity_Email_textview"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/edittextbackground"
+        android:ems="10"
+        android:hint="   E-mail Adresinizi Yazınız"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/textColor"
+        android:textColorHint="@color/textColor"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/guncelle_activity_password_textview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guncelle_activity_ad_soyad_textview" />
+
+    <EditText
+        android:id="@+id/guncelle_activity_ad_soyad_textview"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/edittextbackground"
+        android:ems="10"
+        android:hint="  Adınızı ve Soyadınızı Yazınız"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/textColor"
+        android:textColorHint="@color/textColor"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/guncelle_activity_Email_textview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guncelle_activity_yeni_uyelik_textview" />
+
+    <EditText
+        android:id="@+id/guncelle_activity_password_textview"
+        android:layout_width="379dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/edittextbackground"
+        android:ems="10"
+        android:freezesText="false"
+        android:hint="  Parolanızı Yazınız"
+        android:inputType="textPassword"
+        android:textColor="@color/textColor"
+        android:textColorHint="@color/textColor"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/guncelle_activity_guncelle_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guncelle_activity_Email_textview" />
+
+    <Button
+        android:id="@+id/guncelle_activity_guncelle_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/buttonbackground"
+        android:backgroundTint="@color/buttonColor"
+        android:text="  Güncelle  "
+        android:textAllCaps="false"
+        android:textColor="@color/textColor"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/guncelle_activity_giris_yap_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guncelle_activity_password_textview" />
+
+    <Button
+        android:id="@+id/guncelle_activity_giris_yap_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/buttonbackground"
+        android:backgroundTint="@color/buttonColor"
+        android:text="  Giriş Yap  "
+        android:textAllCaps="false"
+        android:textColor="@color/textColor"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/guncelle_activity_bilgilendirme_textview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guncelle_activity_guncelle_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
